@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This connects the icons files to the strings they belong to-->
+<resources>
+    <declare-styleable name="attrs_icon">
+        <attr name="iconFile" format="string"/>
+    </declare-styleable>
+</resources>

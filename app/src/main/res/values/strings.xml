@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Settings</string>
+    <string name="title_activity_preferences">WolfPak Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">WolfPak Settings</string>
+    <string name="misc_prefs">Things You Care About</string>
+    <string name="terms_conditions">Things You Don\'t Care About</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="title_activity_termsofservice">Terms of Service</string>
+    <string name="title_activity_privacypolicy">Privacy Policy</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="contact">Contact Us</string>
+    <string name="report">Report Bug</string>
+    <string name="rate">Rate Us in the App Store</string>
+    <string name="follow">Follow Us on Social Media</string>
+    <string name="contact_us">mailto:support@wolfpakapp.com</string>
+    <string name="summary">Follow Us on Social Media</string>
+    <string name="default_summary">Which Platform?</string>
+
+    <string-array name="iconName">
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+    </string-array>
+
+    <string-array name="iconFile">
+        <item>tinyfb</item>
+        <item>twit</item>
+        <item>insta</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

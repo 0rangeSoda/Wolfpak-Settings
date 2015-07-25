@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- THIS PART IS FOR THE "PARTS YOU CARE ABOUT" radio buttons and following us -->
+
+    <PreferenceCategory android:title="@string/misc_prefs">
+
+        <SwitchPreference
+            android:title="Display NSFW Content"
+            android:id="@+id/NSFWswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:key="showNSFW"/>
+
+        <SwitchPreference
+            android:title="Mute Nofications"
+            android:id="@+id/MuteSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:key="mute"/>
+
+        <Preference
+                android:title="Rate Us in the App Store"
+                android:key="@string/rate">
+
+                <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="https://play.google.com/store/apps/details?id=com.snapchat.android&amp;hl=en"/>
+        />
+
+        </Preference>
+
+    <!--THIS SECTION IS FOR THE ICON PICKER DIALOGUE TO OPEN FACEBOOK, TWITTER AND INSTAGRAM AND SHIT-->
+
+        <Preference
+            android:key="followus"
+            android:title="@string/summary"
+            />
+
+
+    </PreferenceCategory>
+
+
+    <!-- THIS PART IS FOR THE "PARTS YOU DON'T CARE ABOUT" emailing us, and dialogue boxes and stuff, currently just opens a separate email application because EASY, also because other ways don't work -->
+
+        <PreferenceCategory android:title="@string/terms_conditions">
+
+            <Preference
+                android:title="Contact Us"
+                android:key="@string/contact">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="@string/contact_us">
+                    <extra android:name="android.intent.extra.SUBJECT"
+                        android:value="About: WolfPak" />
+                </intent>
+
+            </Preference>
+
+            <Preference
+                android:title="Report Bug"
+                android:key="@string/report">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="@string/contact_us">
+                    <extra android:name="android.intent.extra.SUBJECT"
+                        android:value="Reporting a Bug found in: WolfPak" />
+                </intent>
+
+            </Preference>
+
+            <PreferenceScreen
+                android:title="Terms of Service"
+                android:key="@string/terms_of_service">
+
+                <intent android:action="android.intent.action.VIEW" android:targetPackage="com.wolfpakapp.settings" android:targetClass="com.wolfpakapp.settings.termsofservice" />
+            </PreferenceScreen>
+
+
+
+            <PreferenceScreen
+            android:title="Privacy Policy"
+            android:key="@string/privacy_policy">
+
+            <intent android:action="android.intent.action.VIEW" android:targetPackage="com.wolfpakapp.settings" android:targetClass="com.wolfpakapp.settings.privacypolicy" />
+
+            </PreferenceScreen>
+            <PreferenceScreen
+                android:title="Tutorial"
+                android:key="@string/privacy_policy">
+
+
+            </PreferenceScreen>
+        </PreferenceCategory>
+</PreferenceScreen>
